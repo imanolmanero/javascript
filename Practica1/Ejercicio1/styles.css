@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Estilo general del body */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+background-color: antiquewhite;    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Contenedor del formulario */
+form {
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    width: 320px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+form:hover {
+    transform: scale(1.02);
+}
+
+/* Etiquetas de texto */
+p {
+    text-align: left;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Inputs de texto y password */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 6px rgba(102, 126, 234, 0.5);
+}
+
+/* Botones generales */
+input[type="button"] {
+    width: 48%;
+    margin: 10px 1%;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Botón Entrar */
+input[value="Entrar"] {
+    background: #28a745;
+    color: white;
+}
+
+input[value="Entrar"]:hover {
+    background: #218838;
+}
+
+/* Botón Salir */
+input[value="Salir"] {
+    background: #dc3545;
+    color: white;
+}
+
+input[value="Salir"]:hover {
+    background: #c82333;
+}
