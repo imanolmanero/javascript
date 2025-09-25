@@ -1,0 +1,137 @@
+/* RESET Y TIPOGRAFÍA */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #ece9e6, #ffffff);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 50px 20px;
+}
+
+/* TÍTULO */
+h1 {
+    font-size: 2.8rem;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+
+/* CALENDARIO */
+#calendario {
+    display: grid;
+    grid-template-columns: repeat(7, 70px);
+    gap: 12px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+#calendario button {
+    background: #ffffff;
+    border: none;
+    border-radius: 12px;
+    color: #555;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 20px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+/* Hover moderno */
+#calendario button:hover {
+    background: #ff6b81;
+    color: #fff;
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* Día actual destacado */
+#calendario button.dia-actual {
+    background: #1dd1a1;
+    color: #fff;
+    font-weight: 700;
+    box-shadow: 0 6px 18px rgba(29,209,161,0.4);
+}
+
+/* ANOTACIONES */
+#anotaciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 30px;
+}
+
+#anotaciones input {
+    padding: 15px 20px;
+    width: 100%;
+    border-radius: 12px;
+    border: 2px solid #ddd;
+    outline: none;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: #fdfdfd;
+}
+
+#anotaciones input:focus {
+    border-color: #ff6b81;
+    box-shadow: 0 0 10px rgba(255,107,129,0.3);
+}
+
+/* BOTONES ANOTACIONES */
+#anotaciones button {
+    background: #ff6b81;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    font-weight: 600;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+#anotaciones button:hover {
+    background: #ff4757;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    #calendario {
+        grid-template-columns: repeat(5, 60px);
+        gap: 10px;
+        padding: 15px;
+    }
+
+    #calendario button {
+        padding: 15px 0;
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
+#calendario button.seleccionado {
+    background: #1dd1a1 !important;
+    color: #fff;
+    transform: scale(1.05);
+}

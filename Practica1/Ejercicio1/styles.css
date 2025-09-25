@@ -55,7 +55,7 @@ input[type="password"]:focus {
 }
 
 /* Botones generales */
-input[type="button"] {
+button {
     width: 48%;
     margin: 10px 1%;
     padding: 12px;
@@ -64,24 +64,4 @@ input[type="button"] {
     border: none;
     cursor: pointer;
     transition: 0.3s;
-}
-
-/* Botón Entrar */
-input[value="Entrar"] {
-    background: #28a745;
-    color: white;
-}
-
-input[value="Entrar"]:hover {
-    background: #218838;
-}
-
-/* Botón Salir */
-input[value="Salir"] {
-    background: #dc3545;
-    color: white;
-}
-
-input[value="Salir"]:hover {
-    background: #c82333;
 }
