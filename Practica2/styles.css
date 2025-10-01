@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #f8f9fa, #e9ecef);
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    margin: 0;
+}
+
+.contenedor {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 14px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    width: 420px;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+/* Caja de entrada */
+.entrada {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    background: grey;
+    color: white;
+    transition: background 0.3s, transform 0.1s;
+}
+
+button:hover {
+    background: #919090;
+}
+
+/* Lista de productos */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+    overflow-y: auto;
+}
+
+li {
+    padding: 12px;
+    margin-bottom: 10px;
+    background: #f1f3f5;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+    font-size: 15px;
+}
+
+li:hover {
+    background: #e9ecef;
+}
+
+/* Botón Reset */
+.acciones {
+    margin-top: 25px;
+    text-align: center;
+}
+
+#btnResetear {
+    background: grey;
+    padding: 10px 20px;
+    font-size: 15px;
+}
+
+#btnResetear:hover {
+    background: #919090;
+}
